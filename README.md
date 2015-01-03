@@ -9,6 +9,10 @@ Minimal-block is a minimalistic responsive and friendly Jekyllrb theme. It has a
 
 [Github Repo](https://github.com/drvy/minimal-block)
 
+
+![minimal-block preview](https://raw.githubusercontent.com/drvy/minimal-block/master/preview.png)
+
+
 *Block-log theme (
 [Live Demo](http://anandu.info/block-log)
 [Download](https://github.com/anandubajith/block-log/archive/master.zip)
