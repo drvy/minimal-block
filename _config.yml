@@ -1,0 +1,15 @@
+name: Minimal-Block
+description: Minimalistic, friendly, responsive.
+url: http://yoursite.com
+markdown: redcarpet
+paginate: 5
+highlighter: pygments
+
+rss-feed-limit: 10
+
+disqus-id: yourusername
+twitter: yourusername
+github: yourusername
+google: +yourusername
+
+permalink: /:title
