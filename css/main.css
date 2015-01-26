@@ -42,10 +42,8 @@ p { line-height: 1.4; }
 .top { text-align:right; } /* Goto #top */
 
 
-.inside {padding-left:15px;}
-.sec-string { font-weight:700; text-align:center;}
-.donate-b {text-align:center; display:block; width:100%;}
-.donate-b * {text-align:center; width:auto; margin:5px auto;}
+.inside { padding-left: 15px; }
+
 
 /* ------------------------------------------------------------------------
 -  The navigation. Main menu and article links. -
