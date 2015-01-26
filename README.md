@@ -9,10 +9,8 @@ Minimal-block is a minimalistic responsive and friendly Jekyllrb theme. It has a
 
 [Github Repo](https://github.com/drvy/minimal-block)
 
-*Block-log theme (
-[Live Demo](http://anandu.info/block-log)
-[Download](https://github.com/anandubajith/block-log/archive/master.zip)
-[Github Repo](https://github.com/anandubajith/block-log))*
+
+![minimal-block preview](https://raw.githubusercontent.com/drvy/minimal-block/master/preview.png)
 
 
 Setting up
@@ -128,3 +126,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+*Block-log theme (
+[Live Demo](http://anandu.info/block-log)
+[Download](https://github.com/anandubajith/block-log/archive/master.zip)
+[Github Repo](https://github.com/anandubajith/block-log))*
