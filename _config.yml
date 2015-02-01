@@ -1,15 +1,20 @@
+# General
 name: Minimal-Block
-description: Minimalistic, friendly, responsive.
-url: http://yoursite.com
+description: "Minimalistic, friendly, responsive."
+url: http://localhost:4000
+
 markdown: redcarpet
-paginate: 5
 highlighter: pygments
 
-rss-feed-limit: 10
+paginate: 5
+permalink: /:title
 
+# Social share and comments.
 disqus-id: yourusername
 twitter: yourusername
 github: yourusername
 google: +yourusername
 
-permalink: /:title
+# RSS feed
+rss-feed-limit: 10
+rss-show-full: "no"

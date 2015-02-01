@@ -11,10 +11,10 @@
             <item>
                 <title>{{ post.title | xml_escape }}</title>
                 <dc:creator>{{ post.author.name | xml_escape }}</dc:creator>
-                {% if post.excerpt %}
-                    <description>{{ post.excerpt | xml_escape }}</description>
-                {% else %}
+                {% if site.rss-show-full == "yes" %}
                     <description>{{ post.content | xml_escape }}</description>
+                {% else %}
+                    <description>{{ post.excerpt | strip_html | truncate: 250 }}</description>
                 {% endif %}
                             <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
                 <link>{{ site.url }}{{ post.url }}</link>

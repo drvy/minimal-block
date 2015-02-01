@@ -39,9 +39,8 @@ a {
 }
 
 p { line-height: 1.4; }
-.top { text-align:right; } /* Goto #top */
 
-
+.top { text-align:right; }
 .inside { padding-left: 15px; }
 
 
