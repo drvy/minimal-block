@@ -9,7 +9,7 @@ shortUrl: http://goo.gl/JhfZT9
 This theme stared out being a fork from the [Block-log](https://github.com/anandubajith/block-log). It still keeps many similarities. Minimal-block is a minimalistic, responsive and friendly Jekyllrb theme. It has almost no javascript (except for disquss), static social share buttons, rss, paginator, clean and simple permalinks and RSS.
 
 
-[Live Demo](http://drvy.net/blog/)
+[Live Demo](http://drvy.github.io/minimal-block/)
 
 [Download](https://github.com/drvy/minimal-block/archive/master.zip)
 
