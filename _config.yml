@@ -1,7 +1,7 @@
 # General
 name: Minimal-Block
 description: "Minimalistic, friendly, responsive."
-url: http://localhost:4000
+url: http://drvy.github.io/minimal-block
 
 markdown: redcarpet
 highlighter: pygments
@@ -10,10 +10,10 @@ paginate: 5
 permalink: /:title
 
 # Social share and comments.
-disqus-id: yourusername
-twitter: yourusername
-github: yourusername
-google: +yourusername
+disqus-id: drvy
+twitter: drvymonkey
+github: drvy
+google: +DrvyMonkey
 
 # RSS feed
 rss-feed-limit: 10
