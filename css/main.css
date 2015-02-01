@@ -40,7 +40,7 @@ a {
 
 p { line-height: 1.4; }
 
-.top { text-align:right; }
+.top { text-align: right; }
 .inside { padding-left: 15px; }
 
 
@@ -165,10 +165,9 @@ hr {
 
 pre, code {
     background: #f7f7f7;
-    font-size:0.8em;
-    line-height:1.5em;
+    font-size: 0.8em;
+    line-height: 1.5em;
     padding: 0.4em;
-
 }
 
 
@@ -181,12 +180,12 @@ blockquote {
 }
 
     blockquote:before {
-      color: #ccc;
-      content: open-quote;
-      font-size: 4em;
-      line-height: 0.1em;
-      margin-right: 0.25em;
-      vertical-align: -0.4em;
+        color: #ccc;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
     }
 
     blockquote p { display: inline; }
@@ -213,6 +212,27 @@ blockquote {
         color: #212121;
         text-decoration: underline;
     }
+
+
+/* ------------------------------------------------------------------------
+-  Tables -
+-------------------------------------------------------------------------*/
+
+table {
+    border: 1px solid #a1a1a1;
+    border-collapse: collapse;
+    font-size: 0.8em;
+    width: 100%;
+}
+
+    table tr { border: none !important; }
+    table td,th {
+        border: 1px solid #a1a1a1;
+        padding: 3px;
+    }
+    table thead tr { background: #f2f2f2 !important; }
+    table tr:nth-child(odd) { background: #f2f2f2; }
+    table tr:nth-child(even)  { background: #e1e1e1; }
 
 
 /* ------------------------------------------------------------------------
@@ -261,7 +281,7 @@ blockquote {
 .footer {
     clear: both;
     color: #888;
-    font-size:0.5em;
+    font-size: 0.5em;
     margin: 0em;
     padding: 0.2em;
     text-align: center;
@@ -295,6 +315,6 @@ blockquote {
     nav br { display: none; }
     nav a { margin: 0 0.75em; }
 
-    .social { text-align:center; }
-    .social li { display:block; width:100%; }
+    .social { text-align: center; }
+    .social li { display: block; width: 100%; }
 }

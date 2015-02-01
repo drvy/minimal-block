@@ -5,12 +5,9 @@ layout: default
 <div class="main-content">
 
     <article class="module color-3">
-        <h1>{{ page.title }}</h1>
-        <h2>{{ page.tags | array_to_sentence_string }}</h2>
+        <h1>{{ page.title }}{{ .shortUrl }}</h1>
         <hr>
-
         {{ content }}
-
         <p class="top"><small><a href="#top">[top]</a></small></p>
     </article>
 
@@ -18,18 +15,21 @@ layout: default
     <div class="social module">
         <ul>
 
-            {% assign tagStr = '' %}
             {% capture url %}{{ site.url }}{{ page.url }}{% endcapture %}
+
             {% if page.shortUrl != null %}
                 {% assign url = page.shortUrl %}
-                {% for tag in page.tags %}
-                    {% capture tagStr %}{{ tagStr }},{{ tag }}{% endcapture %}
-                {% endfor %}
             {% endif %}
 
-            <li class="fb"><a target="_blank" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?t={{ page.title }}&u={{ url }}">Facebook</a></li>
+            {% assign tagStr = '' %}
+            {% for tag in page.tags %}
+                {% capture tagStr %}{{ tagStr }}{{ tag }},{% endcapture %}
+            {% endfor %}
+
+            <li class="fb">
+            <a target="_blank" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?t={{ page.title }}&u={{ url }}">Facebook</a></li>
             <li class="tw"><a target="_blank" title="Share on Twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ url }}&via={{ site.twitter }}&hashtags={{ tagStr }}">Twitter</a></li>
-            <li class="gp"><a target="_blank" title="Share on Google+" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}">Google+</a></li>
+            <li class="gp"><a target="_blank" title="Share on Google+" href="https://plus.google.com/share?url={{ url }}">Google+</a></li>
         </ul>
     </div>
 
