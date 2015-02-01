@@ -3,6 +3,7 @@ layout: default
 ---
 
 <section class="main-content">
+
     {% for post in paginator.posts %}
         <article class="module color-3">
                 <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
