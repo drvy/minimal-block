@@ -1,7 +1,7 @@
 # General
 name: Minimal-Block
 description: "Minimalistic, friendly, responsive."
-url: http://drvy.github.io/minimal-block
+url: https://drvy.github.io/minimal-block
 
 markdown: redcarpet
 highlighter: pygments
