@@ -1,19 +1,22 @@
 # General
-name: Minimal-Block
-description: "Minimalistic, friendly, responsive."
-url: http://localhost:4000
+name: "Stephen Groat"
+description: "Engineer focused on security, IPv6, and sunny days."
+url: http://www.stephengroat.com
 
 markdown: redcarpet
 highlighter: pygments
 
 paginate: 5
 permalink: /:title
+singlepage: resume
 
 # Social share and comments.
-disqus-id: yourusername
-twitter: yourusername
-github: yourusername
-google: +yourusername
+twitter: stephengroat
+github: stephengroat
+google: +stephengroat
+linkedin: sgroat
+scholar: 2FxnwFgAAAAJ
+email: stephen@egroat.com
 
 # RSS feed
 rss-feed-limit: 10
