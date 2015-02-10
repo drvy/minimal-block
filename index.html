@@ -1,8 +1,19 @@
 ---
 layout: default
 ---
-
 <section class="main-content">
+{% if site.singlepage %}
+
+    {% assign post = site.posts.first %}
+    {% assign content = post.content %}
+    <article class="module color-3">
+        <!--h1>{{ post.title }}{{ .shortUrl }}</h1>
+        <hr-->
+        {{ content }}
+        <!--p class="top"><small><a href="#top">[top]</a></small></p-->
+    </article>
+
+{% else %}
 
     {% for post in paginator.posts %}
         <article class="module color-3">
@@ -23,7 +34,7 @@ layout: default
             <a href="{{ site.url }}{{ paginator.next_page_path }}" class="next">Next</a>
         {% endif %}
     </div>
+    
+{% endif %}
 
 </section>
-
-
