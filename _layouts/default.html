@@ -21,7 +21,7 @@
     {% if site.highlighter %} <link rel="stylesheet" href="{{ site.url }}/css/syntax.css" type='text/css'> {% endif %}
     <link rel="stylesheet" href="{{ site.url }}/css/main.css" type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
+    <!--link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml"-->
 
 </head>
 
@@ -38,15 +38,20 @@
 
         <nav class="module main-menu color-4">
             <a href="{{ site.url }}/">Home</a>
-            <a href="{{ site.url }}/about/">About</a>
-            <a href="{{ site.url }}/contact/">Contact</a>
+            <a href="mailto:stephen@egroat.com?subject=Request%20for%20Resume">Resume</a>
+            <!--a href="{{ site.url }}/about/">About</a-->
+            <!--a href="{{ site.url }}/contact/">Contact</a-->
         </nav>
 
         <div class="module links color-3">
-            <a href="https://github.com/{{ site.github }}" title="Profile in Github" target="_blank">github</a>
+            <a href="mailto:{{ site.email }}" title="Email" target="_blank">Email</a>
+            <a href="https://www.linkedin.com/in/{{ site.linkedin }}" title="Profile in LinkedIn" target="_blank">LinkedIn</a>
             <a href="https://twitter.com/{{ site.twitter }}" title="Profile in Twitter" target="_blank">twitter</a>
+            <a href="https://github.com/{{ site.github }}" title="Profile in Github" target="_blank">github</a>
             <a href="https://plus.google.com/{{ site.google }}" title="Profile in Google+" target="_blank">Google+</a>
-            <a href="{{ site.url }}/feed.xml" title="Suscribe to RSS" target="_blank">rss</a>
+            <a href="https://scholar.google.com/citations?user={{ site.scholar }}" title="Profile in Google Scholar" target="_blank">Scholar</a>
+            <a href="https://vt.academia.edu/StephenGroat" title="Profile in Academia.edu" target="_blank">academia.edu</a>
+            <!--a href="{{ site.url }}/feed.xml" title="Suscribe to RSS" target="_blank">rss</a-->
         </div>
 
     </header>
