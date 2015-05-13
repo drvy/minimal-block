@@ -2,7 +2,7 @@
 layout: post
 title:  "minimal-block - A minimalistic responsive Jekyll theme"
 date:   2015-01-03 00:00:00
-categories: jekyll,themes
+categories: [jekyll, themes]
 tags: omg,shit
 shortUrl: http://goo.gl/JhfZT9
 ---
