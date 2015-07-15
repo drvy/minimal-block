@@ -1,10 +1,21 @@
 ---
 layout: default
 ---
+{% if site.about %}
+<section class="main-content">
+    {% assign post = site.posts.first %}
+    {% assign content = post.content %}
+    <article class="module color-3">
+        {{ content }}
+    </article>
+</section>
+{% else %}
 <div class="main-content">
     <article class="module color-3">
             <h1>Just another about page</h1>
             <hr>
             <p>Some info about you or this page.</p>
     </article>
-</div>
+</div> 
+{% endif %}
+
