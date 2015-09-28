@@ -1,0 +1,39 @@
+set paths = {".","/usr/atria/bin","/pkg/qct/software/gnu/libtool/2.4.2/bin/","/pkg/gnu/automake/bin","/pkg/gnu/autoconf/bin","/local/mnt/workspace/android-studio/bin:/local/mnt/workspace/Android/platform-tools"}
+setenv PATH ${PATH}:.:/usr/atria/bin:/pkg/qct/software/gnu/libtool/2.4.2/bin/:/pkg/gnu/automake/bin:/pkg/gnu/autoconf/bin:/local/mnt/workspace/android-studio/bin:/local/mnt/workspace/Android/platform-tools
+#setenv LD_LIBRARY_PATH /pkg/gnu/gcc/3.4.4/lib:/pkg/novas/verdi3_2013.07/share/NPI/lib/LINUX64_GNU_322
+setenv LD_LIBRARY_PATH /pkg/novas/verdi3_2013.07/share/NPI/lib/LINUX64_GNU_322
+if ( -e /pkg/qct/software/v2p/bin/v2p ) then
+        setenv LM_LICENSE_FILE `/pkg/qct/software/v2p/bin/v2p synopsys`
+endif
+setenv LC_ALL C
+alias ct cleartool
+
+bindkey "^R" i-search-back
+
+set history = 2000
+set savehist = (2000 merge)
+
+# Source Gandalf  workspace.cshrc in a new view in Clearcase
+set stream = `ct lsstream >& /dev/null`
+if ($? == 0 ) then
+    if ( ! $?WORKSPACE ) then
+        if ( -e /vobs/chips/badger/gandalf/gandalf_prj/gandalf/include/workspace.cshrc) then
+            source /vobs/chips/badger/gandalf/gandalf_prj/gandalf/include/workspace.cshrc
+        endif
+        if ( -e /vobs/chips/badger/trahira/trahira_prj/trahira/include/workspace.cshrc) then
+            source /vobs/chips/badger/trahira/trahira_prj/trahira/include/workspace.cshrc
+        endif
+        if ( -e /vobs/chips/badger/elessar/elessar_prj/elessar/include/workspace.cshrc) then
+            source /vobs/chips/badger/elessar/elessar_prj/elessar/include/workspace.cshrc
+        endif
+        if ( -e /vobs/chips/honey_badger/istari_prj/top/include/workspace.cshrc) then
+           source /vobs/chips/honey_badger/istari_prj/top/include/workspace.cshrc
+        endif
+        if( -e /vobs/chips/honey_badger/nazgul_prj/top/include/workspace.cshrc) then
+           source /vobs/chips/honey_badger/nazgul_prj/top/include/workspace.cshrc
+        endif
+        if( -e /vobs/chips/hoya/napali_prj/top/include/workspace.cshrc) then
+           source /vobs/chips/hoya/napali_prj/top/include/workspace.cshrc
+        endif
+   endif
+endif
