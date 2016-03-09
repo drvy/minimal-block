@@ -3,7 +3,7 @@ name: "Stephen Groat"
 description: "Engineer focused on security, IPv6, and sunny days."
 url: http://www.stephengroat.com
 
-markdown: redcarpet
+markdown: kramdown
 highlighter: rouge
 
 paginate: 5
