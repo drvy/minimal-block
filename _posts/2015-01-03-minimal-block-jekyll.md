@@ -78,7 +78,7 @@ You will need to change `name` , `url` , `twitter`, `disqus-id`, `google` and `g
     <tr><td>github</td><td>Your github username.</td></tr>
     <tr><td>google</td><td>Youre google+ username.</td></tr>
     <tr><td>rss-feed-limit</td><td>How much entries to display in the feed.xml (rss).</td></tr>
-    <tr><td>rss-show-full</td><td>The show the full post or to put only the excerpt (yes | no).</td>
+    <tr><td>rss-show-full</td><td>The show the full post or to put only the excerpt (yes | no).</td></tr>
 </tbody>
 </table>
 
