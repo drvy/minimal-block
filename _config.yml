@@ -1,7 +1,7 @@
 # General
 name: "Stephen Groat"
 description: "Engineer focused on security, IPv6, and sunny days."
-url: http://www.stephengroat.com
+url: https://www.stephengroat.com
 
 markdown: kramdown
 highlighter: rouge
