@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/sgroat
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://stephengroat.com
+  * I am sgroat (https://keybase.io/sgroat) on keybase.
+  * I have a public key with fingerprint EC05 0A34 72E3 CF42 9776  FE4B 3FEA 0C7A 2039 9F68
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101afb13985f9fe22e07529e506c5c79933dbe88bf9bf22b8f2bcd6ff70fcbca0de0a",
+            "fingerprint": "ec050a3472e3cf429776fe4b3fea0c7a20399f68",
+            "host": "keybase.io",
+            "key_id": "3fea0c7a20399f68",
+            "kid": "0101afb13985f9fe22e07529e506c5c79933dbe88bf9bf22b8f2bcd6ff70fcbca0de0a",
+            "uid": "9d4b28503c5205617184b56fd573d119",
+            "username": "sgroat"
+        },
+        "service": {
+            "hostname": "stephengroat.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1468626939,
+    "expire_in": 157680000,
+    "prev": "7b472f67bff861d4074ad1be33a28da9acd213c852dd146233d5fad23b764d71",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.53
+Comment: https://keybase.io/crypto
+
+yMInAnicrVJbSBVBGD52kw6aGhlEFLWERZnszl7n2L3sagXRlazjzM7MOetl97Rn
+1Y6X7hE+WS9FBVZQEV0UIkgxKbsIJVrUQ4FIaPZyKqMIJO2hWam3HpuXYf7/+775
+/o//afr4QDBleTKteg68FE3p6jhfEdhVXzVaI2CHJIRQjVBKxy5aRmjcC5daRAgJ
+oiRKiGFJhobKIKMAUFFXAaSqqJmqqUMoywRTw8AMYgYANhjAJtEY00VmYhOJhIpI
+yBWYZUeoG3Mt2+Oy1BRVEcmKDqhsMgVAXdcYVbDMKBJNHQFRhpBpBidGnbjP4OYw
+itM8y+E1/giP2fsH/j/7rhiTg0TBwFBF2VSBqGqSLhkKVjVGVF0mkgR9YJy6Niqn
+HB2PuA7yhLpcgdcqLZP6sfpz/O17NBal9hgqz3TKOTvmOp5jOmW8G/W8WDzks71E
+zIdXURz+IxTGlk14kpxRSd245dhCSOJI07N8ZUnRDA1oUIa5Aj0Ys1watnyEqmuG
+yI//D63kkjrm0TNNx4wZmkQUUVcQkTCVZQQMgiAyCZBk01ABIVwU8LBUhgiQsa4p
+RJcEf7QDtiOEdG4TRfyhrIiNvAqXCnWPHxVNCKQEA5MmjvM3LBCcnPl375qupo6M
+exu+31n1ZPXlW9s7bqdbMw/Nz+y+Dm6AiwWpGQsHhr2G9uCXjOp9gxsDwyM5QxVb
+00Ktwvst83b2dL+uqe3KLu7b83RallEWnTs6dU5SSxTb7my7ZfbpgvTpa0Ozcpof
+ZhW2nQE1+7InPhsyvcEHmQPnGhrfDRdpJ76Or+vdNr2+8ebSZO6Kj61f3y87WXQr
+rWVt03dUsK4ytbZn+/HNH7q+3XsV3f8omHh5tPAxK+n8+Sa/tm/HsQttvUtWbuyA
+vYkNp7Jg/4sn7V2Ln105sXfK7muNP5I5sLpcXj9jaM2iVXdBx9nnhYf7c8R1q3+F
++74FP+XXx+Kb7sz9XNict+DIzZKe334YQQA=
+=CP0Q
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/sgroat
+
+==================================================================
+
