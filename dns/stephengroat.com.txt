@@ -1,55 +1,56 @@
-;;
+;; 
 ;; Domain:     stephengroat.com
-;; Exported:   2016-06-21 21:11:07
-;;
+;; Exported:   2016-07-16 20:20:58
+;; 
 ;; This file is intended for use for informational and archival
 ;; purposes ONLY and MUST be edited before use on a production
 ;; DNS server.  In particular, you must:
 ;;   -- update the SOA record with the correct authoritative name server
 ;;   -- update the SOA record with the contact e-mail address information
 ;;   -- update the NS record(s) with the authoritative name servers for this domain.
-;;
+;; 
 ;; For further information, please consult the BIND documentation
 ;; located on the following website:
-;;
+;; 
 ;; http://www.isc.org/
-;;
+;; 
 ;; And RFC 1035:
-;;
+;; 
 ;; http://www.ietf.org/rfc/rfc1035.txt
-;;
+;; 
 ;; Please note that we do NOT offer technical support for any use
 ;; of this zone data, the BIND name server, or any other third-party
 ;; DNS software.
-;;
+;; 
 ;;     Use at your own risk.
 $ORIGIN .
-@       3600    IN      SOA     stephengroat.com.       root.stephengroat.com.  (
-                2021821006      ; serial
-                7200            ; refresh
-                3600            ; retry
-                86400           ; expire
-                3600)           ; minimum
+@	3600	IN	SOA	stephengroat.com.	root.stephengroat.com.	(
+		2022036705	; serial
+		7200		; refresh
+		3600		; retry
+		86400		; expire
+		3600)		; minimum
 
 
 
 ;; NS Records (YOU MUST CHANGE THIS)
-stephengroat.com.       300     IN      NS      REPACE&ME$WITH^YOUR@NAMESERVER.
+stephengroat.com.	300	IN	NS	REPACE&ME$WITH^YOUR@NAMESERVER.
 
 ;; MX Records
-stephengroat.com.       300     IN      MX      30      alt3.gmr-smtp-in.l.google.com.
-stephengroat.com.       300     IN      MX      20      alt2.gmr-smtp-in.l.google.com.
-stephengroat.com.       300     IN      MX      10      alt1.gmr-smtp-in.l.google.com.
-stephengroat.com.       300     IN      MX      40      alt4.gmr-smtp-in.l.google.com.
-stephengroat.com.       300     IN      MX      5       gmr-smtp-in.l.google.com.
+stephengroat.com.	300	IN	MX	30	alt3.gmr-smtp-in.l.google.com.
+stephengroat.com.	300	IN	MX	20	alt2.gmr-smtp-in.l.google.com.
+stephengroat.com.	300	IN	MX	10	alt1.gmr-smtp-in.l.google.com.
+stephengroat.com.	300	IN	MX	40	alt4.gmr-smtp-in.l.google.com.
+stephengroat.com.	300	IN	MX	5	gmr-smtp-in.l.google.com.
 
 ;; TXT Records
-stephengroat.com.       300     IN      TXT     "v=spf1 include:_spf.google.com ~all"
-stephen._pka.stephengroat.com.  300     IN      TXT     "v=pka1\;fpr=EC050A3472E3CF429776FE4B3FEA0C7A20399F68\;uri=http://www.stephengroat.com/stephen.pubkey.txt"
+stephengroat.com.	300	IN	TXT	"keybase-site-verification=7eF1XkPtN3DYHIQH94j_UK1jTk32teKu4DYJYYrHBCI"
+stephengroat.com.	300	IN	TXT	"v=spf1 include:_spf.google.com ~all"
+stephen._pka.stephengroat.com.	300	IN	TXT	"v=pka1\;fpr=EC050A3472E3CF429776FE4B3FEA0C7A20399F68\;uri=http://www.stephengroat.com/stephen.pubkey.txt"
 
 ;; CNAME Records
-www.stephengroat.com.   300     IN      CNAME   stephengroat.github.io.
+www.stephengroat.com.	300	IN	CNAME	stephengroat.github.io.
 
 ;; A Records (IPv4 addresses)
-stephengroat.com.       300     IN      A       192.30.252.153
-stephengroat.com.       300     IN      A       192.30.252.154
+stephengroat.com.	300	IN	A	192.30.252.153
+stephengroat.com.	300	IN	A	192.30.252.154
