@@ -67,3 +67,77 @@ View my publicly-auditable identity here: https://keybase.io/sgroat
 
 ==================================================================
 
+==================================================================
+https://keybase.io/sgroat
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://egroat.com
+  * I am sgroat (https://keybase.io/sgroat) on keybase.
+  * I have a public key with fingerprint EC05 0A34 72E3 CF42 9776  FE4B 3FEA 0C7A 2039 9F68
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101afb13985f9fe22e07529e506c5c79933dbe88bf9bf22b8f2bcd6ff70fcbca0de0a",
+            "fingerprint": "ec050a3472e3cf429776fe4b3fea0c7a20399f68",
+            "host": "keybase.io",
+            "key_id": "3fea0c7a20399f68",
+            "kid": "0101afb13985f9fe22e07529e506c5c79933dbe88bf9bf22b8f2bcd6ff70fcbca0de0a",
+            "uid": "9d4b28503c5205617184b56fd573d119",
+            "username": "sgroat"
+        },
+        "revoke": {
+            "sig_ids": [
+                "d1fd39429b63e5ad8f31c8d353f6ab14af0d2c14bfff5e5c47bb42f73eea4a2b0f"
+            ]
+        },
+        "service": {
+            "hostname": "egroat.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1468951880,
+    "expire_in": 157680000,
+    "prev": "e21c850676dd2fc8b27f7048650b904ca5f2739ca27e0b1f118ee05bfd6ec843",
+    "seqno": 19,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.53
+Comment: https://keybase.io/crypto
+
+yMJsAnicrVJfiFRVHJ5Vc9tl21XZSCzILkHZbts5595z7znTsEotlBir6FKSa9P5
+8zuzl9mZO3vn7thm+7QipGAQFP11ZNWHCAKVonpRc9QFt1LBehAhbKTowSiUjMjt
+3MHeeuy8HM6P7/d93+87v8Y9izOdbWt/6Xp1Na+PtZ07+etk5oV9pWd3OjLSU052
+p1OE1gXjGqpJvhhqJ+sgjLAwErucUcMNEAIooIQDRb6iKuDcdbUExqTh0hAimSFS
+ad+YABkllUAakHD6HROWCxBX4rCcWFpQiCLhegEBVxmP8CDwDXjSNSCQCgRBLufG
+Z7ZxLKqmHdacFFUYCCNbs498y95/4P9n35MtOq49SRhFrqIEUR8HmHmS+kbTwNUY
+8xRYhbgsSmDR1UIcicSZ7ndiqEVFSFOthgVruepktzkaG+1yO7T0XaBCM+NixbRL
+XeMLiT1hkCYKe9IYQ4EqL5DSIyZwAYQniETG2W65rV4tVC3yNKM72tDSHlBRyXqq
+xFESqWjc1seSpJJNLSVTlRS3A2T+DkNehmVtv8c21CCuhlHZyWKLVEmYUmLPZ5xi
+xlC/A69UwhjyYYqggc+QPakM1FJpYsew+Qa+1sQoJklg0/SYT5HkyFOCGhK4XAkS
+AJLYYMwAEJVG+6CY5zrpTBPlyHJz61MU0ijDQlkkkzE401+dGF2SaevMLL1rUbq3
+mc6OZf9u8/17228/vmvljfmZdd9uKh7v6f5of+PHrsszV35ecmTf6lW1+/668tzt
+S7mB41v0/PuPrVrx1J66334o9zpfWLf+7OTLw/PfFXqXfvNW74bh+qbB871zr91c
+yH+y8uD+L0Z35DpyU13FJ0c2fHqgHaYz55/xll144ljzvT96Ls8+9M7FW1/Gu3T3
+okaox/Ibu3860exbM9s4GL30APvh1Gfff77n2oxzo28Gz+7OH5k7Ov73+s23Dh3u
+/LrULN+7/O1LH6zdsmJ0ol5g10v1Bt469+Zs7uORcx+eWXj31PP1m+oNdHro7gcP
++7892jF04Prgn+0nc8EQqOGRqxd6+voHN+995OFj15ovXt399PbfJ5r/AGR5WGs=
+=aGFU
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/sgroat
+
+==================================================================
