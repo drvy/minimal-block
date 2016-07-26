@@ -1,6 +1,6 @@
 ;; 
 ;; Domain:     stephengroat.com
-;; Exported:   2016-07-16 20:20:58
+;; Exported:   2016-07-26 00:32:59
 ;; 
 ;; This file is intended for use for informational and archival
 ;; purposes ONLY and MUST be edited before use on a production
@@ -25,7 +25,7 @@
 ;;     Use at your own risk.
 $ORIGIN .
 @	3600	IN	SOA	stephengroat.com.	root.stephengroat.com.	(
-		2022036705	; serial
+		2022115977	; serial
 		7200		; refresh
 		3600		; retry
 		86400		; expire
@@ -37,18 +37,17 @@ $ORIGIN .
 stephengroat.com.	300	IN	NS	REPACE&ME$WITH^YOUR@NAMESERVER.
 
 ;; MX Records
-stephengroat.com.	300	IN	MX	30	alt3.gmr-smtp-in.l.google.com.
-stephengroat.com.	300	IN	MX	20	alt2.gmr-smtp-in.l.google.com.
-stephengroat.com.	300	IN	MX	10	alt1.gmr-smtp-in.l.google.com.
-stephengroat.com.	300	IN	MX	40	alt4.gmr-smtp-in.l.google.com.
-stephengroat.com.	300	IN	MX	5	gmr-smtp-in.l.google.com.
+stephengroat.com.	300	IN	MX	10	mxb.mailgun.org.
+stephengroat.com.	300	IN	MX	10	mxa.mailgun.org.
 
 ;; TXT Records
+pic._domainkey.stephengroat.com.	300	IN	TXT	"k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCooKNY00u0RqwuvrKuiXnRH49IFto/t9/ooADGhlgIVLonK+l1Z+BIZEKWj7cEc9RJ/LSVVHKUNL0zB3qe0aEDRN+OnoYt6plVJI1V0/Im3x3vdnVPHjvc5Cam4Hla2hkadDLK1of1mfYwwS/Ax+g01twaMo9bwjzWSLIgldGrdQIDAQAB"
 stephengroat.com.	300	IN	TXT	"keybase-site-verification=7eF1XkPtN3DYHIQH94j_UK1jTk32teKu4DYJYYrHBCI"
-stephengroat.com.	300	IN	TXT	"v=spf1 include:_spf.google.com ~all"
 stephen._pka.stephengroat.com.	300	IN	TXT	"v=pka1\;fpr=EC050A3472E3CF429776FE4B3FEA0C7A20399F68\;uri=http://www.stephengroat.com/stephen.pubkey.txt"
+stephengroat.com.	300	IN	TXT	"v=spf1 include:mailgun.org ~all"
 
 ;; CNAME Records
+email.stephengroat.com.	300	IN	CNAME	mailgun.org.
 www.stephengroat.com.	300	IN	CNAME	stephengroat.github.io.
 
 ;; A Records (IPv4 addresses)
