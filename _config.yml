@@ -1,20 +1,47 @@
+#------------------------------------------------------------------------------
 # General
-name: Minimal-Block
+#------------------------------------------------------------------------------
+name: "Minimal-Block"
 description: "Minimalistic, friendly, responsive."
-url: http://localhost:4000
+language: "en"
 
+url: http://localhost:4000
+baseurl: ''
+
+#------------------------------------------------------------------------------
+# Markdown processor and code highlighting
+#------------------------------------------------------------------------------
 markdown: kramdown
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 highlighter: rouge
 
-paginate: 5
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+#------------------------------------------------------------------------------
+# Pagination and friendly URLs
+#------------------------------------------------------------------------------
+paginate: 1
+paginate_path: /page-:num
 permalink: /:title
 
-# Social share and comments.
+#------------------------------------------------------------------------------
+# Social sharing, comments and RSS.
+#------------------------------------------------------------------------------
 disqus-id: yourusername
+
+enable-share: true
 twitter: yourusername
 github: yourusername
 google: +yourusername
 
-# RSS feed
 rss-feed-limit: 10
-rss-show-full: "no"
+rss-show-full: false
+
+#------------------------------------------------------------------------------
+# Configuration, plugins, gems, etc..
+#------------------------------------------------------------------------------
+source: .
+destination: ./_site
+gems: ['jekyll-paginate']
