@@ -22,7 +22,7 @@ kramdown:
 #------------------------------------------------------------------------------
 # Pagination and friendly URLs
 #------------------------------------------------------------------------------
-paginate: 1
+paginate: 2
 paginate_path: /page-:num
 permalink: /:title
 
@@ -45,3 +45,7 @@ rss-show-full: false
 source: .
 destination: ./_site
 gems: ['jekyll-paginate']
+
+sass:
+    style: :compressed
+    sass_dir: assets/css/
