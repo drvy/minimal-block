@@ -1,0 +1,6 @@
+category: Debug
+requires: cygwin-debuginfo
+external-source: cmocka
+sdesc: "Debug info for cmocka"
+ldesc: "This package contains files necessary for debugging the
+cmocka package with gdb."

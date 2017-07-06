@@ -1,0 +1,7 @@
+category: Devel
+requires: libcmocka0 pkg-config 
+sdesc: "A powerful testing framework for C which only requires the standard C library"
+ldesc: "An elegant unit testing framework for C with support for mock objects.
+It only requires the standard C library, works on a lot of platforms
+(including embedded) and with different compilers."
+external-source: cmocka
