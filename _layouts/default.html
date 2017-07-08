@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='{{ site.language }}'>
 <META HTTP-EQUIV='Content-Security-Policy' CONTENT="default-src 'self' ajax.cloudflare.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' www.google-analytics.com ajax.cloudflare.com use.fontawesome.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com use.fontawesome.com; font-src 'self' fonts.gstatic.com use.fontawesome.com; img-src 'self' *; media-src 'self';">
+=======
 
 <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <title>
-        {% if page.title %} {{ page.title }}
-        {% else %} {{ site.name }} &mdash; {{ site.description }}
+        {% if page.title %}
+            {{ page.title }}
+        {% else %} 
+            {{ site.name }} &mdash; {{ site.description }}
         {% endif %}
     </title>
 
-    <meta name="robots" content="index,follow">
-    <meta name="revisit-after" content="1 days">
+    <meta name='robots' content='index,follow'>
+    <meta name='revisit-after' content='1 days'>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="HandheldFriendly" content="True">
@@ -30,13 +33,13 @@
 </head>
 
 <body>
-    <header id="top" class="main-header">
+    <header id='top' class='main-header'>
 
-        <div class="module title color-1">
-            <h1><a href="{{ site.url }}/">{{ site.name }}</a></h1>
+        <div class='module title color-1'>
+            <h1><a href='{{ site.url }}/'>{{ site.name }}</a></h1>
         </div>
 
-        <div class="module description color-2">
+        <div class='module description color-2'>
             {{ site.description }}
         </div>
 

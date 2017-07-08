@@ -1,0 +1,23 @@
+<div class='social module'>
+    <ul>
+        {% if page.shortUrl != null %}
+            {% assign url = page.shortUrl %}
+        {% else %}
+            {% capture url %}{{ site.url | append: site.baseurl }}{{ page.url }}{% endcapture %}
+        {% endif %}
+
+        {% assign stitle = (page.title | uri_escape) %}
+
+        {% assign stag = '' %}
+        {% for tag in page.tags %}
+            {% capture stag %}{{ stag }}{{ tag }},{% endcapture %}
+        {% endfor %}
+        {% assign stag = (stag | uri_escape) %}
+
+        <li class='li'><a target='_blank' title='' href='//www.linkedin.com/shareArticle?url={{ url }}%26title={{ stitle }}'>LinkedIn</a></li>
+        <li class='fb'><a target='_blank' title='' href='//www.facebook.com/sharer/sharer.php?t={{ stitle }}%26u={{ url }}'>Facebook</a></li>
+        <li class='tw'><a target='_blank' title='' href='//twitter.com/intent/tweet?text={{ stitle }}%26url={{ url }}%26via={{ site.social.twitter }}%26hashtags={{ stag }}'>Twitter</a></li>
+        <li class='pi'><a target='_blank' title='' href='//www.linkedin.com/shareArticle?url={{ url }}%26title={{ stitle }}'>Pinterest</a></li>
+        <li class='gp'><a target='_blank' title='' href='//plus.google.com/share?url={{ url }}'>Google+</a></li>
+    </ul>
+</div>

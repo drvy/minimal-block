@@ -1,0 +1,572 @@
+---
+---
+
+/* ------------------------------------------------------------------------
+-   Erics Mayer Reset CSS 2.0
+-------------------------------------------------------------------------*/
+
+@import 'reset';
+
+/* ------------------------------------------------------------------------
+-   SASS variables.
+-------------------------------------------------------------------------*/
+
+$color-0: #d1d1d1; /* Main background */
+$color-1: #2c3e50; /* Title background */
+$color-2: #34495e; /* Description background */
+$color-3: #f2f2f2; /* Modules background */
+$color-4: #7f8c8d; /* Main menu background */
+
+$font-stack: "Open Sans", sans-serif;
+$font-size: 18px;
+
+/* ------------------------------------------------------------------------
+-   Make browsers more friendly with padding and margin. -
+-------------------------------------------------------------------------*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ------------------------------------------------------------------------
+-  Main background colors. -
+-------------------------------------------------------------------------*/
+
+.color-1 { background: $color-1; } /* Title background */
+.color-2 { background: $color-2; } /* Description background */
+.color-3 { background: $color-3; } /* Modules background */
+.color-4 { background: $color-4; } /* Main menu background */
+
+
+/* ------------------------------------------------------------------------
+-  The basics. -
+-------------------------------------------------------------------------*/
+
+.anim {
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+
+html, body {
+    background: $color-0;
+    font: $font-size $font-stack;
+    margin: 0;
+}
+
+a {
+    color: $color-1;
+    border: 0;
+    text-decoration: none;
+    @extend .anim;
+    outline: 0;
+
+}
+
+
+header {
+    margin: 0 !important;
+    padding: 0 !important; 
+}
+
+article {
+    padding: 21px !important;
+    margin: 0;
+}
+
+p { line-height: 1.5em; }
+[hidden] { display: none; }
+.top { text-align: right; }
+.inside { padding-left: 15px; }
+
+/* ------------------------------------------------------------------------
+-  The navigation. Main menu and article links. -
+-------------------------------------------------------------------------*/
+
+nav {
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: center;
+    padding: 0.4em;
+
+    a, a:visited {
+        border-bottom: 2px solid transparent;
+        color: $color-3;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0px 5px;
+    }
+    
+    a:hover, a:active {
+        border-bottom-color: $color-3;
+        text-decoration: none !important;
+    }
+    
+    a:active { background: rgba(0,0,0,0.2); }
+
+}
+
+
+/* ------------------------------------------------------------------------
+-  The header (or the left side part of the page). -
+-------------------------------------------------------------------------*/
+
+.main-header {
+    float: left;
+    font-weight: 300;
+    line-height: 1.7;
+    text-align: center;
+    width: 35%;
+
+
+    h1, h2 {
+        font-size: 3em;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    a, a:visited {
+        color: $color-3;
+        text-transform: uppercase;
+    }
+
+    a:hover { cursor: pointer; }
+    a:active { text-decoration: underline; }
+
+
+    .description { color: $color-3; }
+    
+    .main-menu {
+        padding: 0.1em;
+        font-size: 1.1em;
+    }
+}
+
+.module.search {
+    padding: 0.3em !important;
+}
+
+    .search input {
+        background: #f2f2f2;
+        border: 1px solid #e5e5e5;
+        font-family: 'Open Sans', sans-serif;
+        padding: 0.5em;
+        width: 99%;
+    }
+
+/* ------------------------------------------------------------------------
+-  The content. -
+-------------------------------------------------------------------------*/
+
+
+.module {
+    color: #212121;
+    margin: 0.5em;
+    padding: 1.5em;
+    position: relative;
+
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+
+}
+
+
+.main-content {
+
+    float: right;
+    padding: 0;
+    width: 65%;
+    margin-top: 0 !important;
+
+    a, a:visited {
+        color: $color-1;
+        border-bottom: 1px solid $color-3;
+    }
+
+    a:hover { border-color: #ccc; }
+    a:active { border-color: #333; }
+
+    .module {
+        border-bottom: 2px solid #b1b1b1;
+        font-size: 0.9em;
+        margin-right: 1em;
+    }
+
+}
+
+
+article {
+
+    h1 {
+        color: #333;
+        font: 700 1.6em $font-stack;
+        margin: 0.5em 0 !important;
+    }
+
+    h2 { @extend h1; font-size: 1.6em; }
+    h3 { @extend h1; font-size: 1.5em; }
+    h4 { @extend h1; font-size: 1.4em; }
+    h5 { @extend h1; font-size: 1.3em; }
+    h6 { @extend h1; font-size: 1.2em; }
+
+
+    p {
+        font-family: $font-stack;
+        color: #212121;
+        padding: 0.2em;
+        margin-bottom: 0.2em;
+        text-align: justify;
+
+        a, a:visited {
+            border-bottom: 1px solid $color-4 !important;
+            line-height:1.7em;
+            display: inline;
+            padding: 0;
+        }
+
+
+        a:hover {
+            border-bottom-width: 2px !important;
+        }
+
+        a:active {
+            background: $color-1;
+            color: $color-3 !important;
+        }
+
+    }
+
+    .categories {
+        color: $color-4;
+        text-align: right;
+        display: block;
+        font-size: 0.8em;
+    }
+
+    .center { text-align: center; }
+
+}
+
+
+.separator, hr {
+    border: 0;
+    background: #ccc;
+    height: 1px;
+    margin: 0.5em 0;
+}
+
+
+
+/* ------------------------------------------------------------------------
+-  Blockquote, code, pre, tables. -
+-------------------------------------------------------------------------*/
+
+code {
+    background: $color-3;
+    font: 0.9em monospace;
+    line-height: 1.2em;
+    padding: 0.1em;
+}
+
+pre {
+    @extend code;
+    border-top: 3px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    margin:0.5em 0em;
+    padding: 0.3em 0;
+}
+
+
+blockquote {
+
+    font-style: italic;
+    border-left: 5px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 5px;
+    quotes: "\201C""\201D""\2018""\2019";
+
+    :before {
+        color: #ccc;
+        content: open-quote;
+        font-size: 3em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
+    }
+
+    p { display: inline; }
+
+}
+
+sub, sup { color: #444; }
+abbr, acronym { cursor: help; }
+
+table {
+    border: 1px solid #a1a1a1;
+    border-collapse: collapse;
+    font-size: 0.8em;
+    margin: 0.5em 0em;
+    width: 100%;
+
+    tr { border: none !important; }
+
+    td, th {
+        border: 1px solid #a1a1a1;
+        padding: 0.2em;
+    }
+
+    thead tr { background: $color-3 !important; }
+    tr:nth-child(odd) { background: $color-3; }
+    tr:nth-child(even)  { background: $color-0; }
+
+}
+
+/* ------------------------------------------------------------------------
+-  Pagination. -
+-------------------------------------------------------------------------*/
+
+.pagination {
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1.1em !important;
+
+    .page_number { color: #888; }
+
+    .nolink {
+        color: #666;
+        text-decoration: underline;
+    }
+
+    ul {
+        display: inline-block;
+        list-style:none inside;
+        margin: 0;
+        padding: 0;
+
+        li {
+            border: 1px solid #ccc;
+            display: inline-block;
+            padding: 0.3em;
+            margin-bottom: 0.3em;
+
+            a, a:visited {
+                border: none;
+                display: block;
+                text-decoration: none;
+                width: 100%;
+            }
+
+            a:hover, a:active { text-decoration: underline; }
+        }
+    }
+}
+
+
+/* ------------------------------------------------------------------------
+-  Links (header). -
+-------------------------------------------------------------------------*/
+
+.links {
+
+    color: $color-4;
+    padding: 0.5em;
+    font-size: 1.1em;
+
+    a, a:visited {
+        color: #212121;
+        text-transform: lowercase;
+    }
+
+    a:hover, a:active { text-decoration: underline !important; }
+}
+
+
+/* ------------------------------------------------------------------------
+-  Social share (end of the post). -
+-------------------------------------------------------------------------*/
+
+.social {
+    padding: 0 !important;
+    text-align: right;
+
+    ul {
+        list-style: none inside;
+        margin: 0 !important;
+        padding: 0 !important;
+
+        li {
+            display: inline-block;
+            margin: 0 !important;
+            padding: 0.5em;
+
+            a, a:visited {
+                border: none;
+                color: $color-3;
+                display: block;
+                width: 100%;
+            }
+
+            a:hover { text-decoration: underline !important; }
+            a:active { color: $color-1; }
+        }
+    }
+
+    .fb { background: #2c3e50; } .fb:hover { background: #34495e; }
+    .tw { background: #2980b9; } .tw:hover { background: #3498db; }
+    .gp { background: #c0392b; } .gp:hover { background: #e74c3c; }
+    .li { background: #333333; } .li:hover { background: #444444; }
+    .pi { background: #bd071d; } .pi:hover { background: #cd071d; }
+}
+
+
+/* ------------------------------------------------------------------------
+-  Footer. -
+-------------------------------------------------------------------------*/
+
+.footer {
+    clear: both;
+    color: #888888;
+    font-size: 0.7em;
+    margin: 0em;
+    padding: 0.2em;
+    text-align: center;
+
+    a, a:visited {
+        color: $color-4;
+        text-decoration: underline;
+    }
+
+    a:hover { color: $color-1; }
+    a:active { color: #212121; }
+
+    p { margin-top: 2px; }
+}
+
+
+
+/* ------------------------------------------------------------------------
+- Autocomplete styling. Checkout - http://leaverou.github.io/awesomplete/
+-------------------------------------------------------------------------*/
+
+
+div.awesomplete {
+    position: relative;
+    z-index: 9999;
+
+    > input { display: block; }
+
+    > ul {
+        background: $color-3;
+        border: 1px solid $color-0;
+        border-radius: 3px;
+        box-shadow: 0.05em 0.2em 0.6em #888;
+        list-style: none inside;
+        margin: 0.2em 0 0 0;
+        max-width: 100%;
+        min-width: 100%;
+        padding: 0;
+        position: absolute;
+        z-index: 9998;
+
+        [hidden], :empty { display: none; }
+
+        :before {
+            border: inherit;
+            border-bottom: 0;
+            border-right: 0;
+            content: '';
+            height: 0;
+            left: 1em;
+            padding: .4em;
+            position: absolute;
+            top: -0.43em;
+            transform: rotate(45deg);
+            width: 0;
+        }
+
+        li {
+            border-bottom: 1px solid #e0e0e0;
+            cursor: pointer;
+            font-size: 0.8em !important;
+            padding: 0.2em 0.5em;
+            position: relative;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+
+            :hover mark { background: #ccc; }
+        }
+
+        li[aria-selected="true"] {
+            background: $color-2;
+            box-shadow: inset 0px 0px 10px $color-1;
+            color: $color-3;
+
+            :first-child { border-radius: 3px 3px 0 0; }
+            :last-child { border-radius: 0 0 3px 3px; }
+            mark { background: $color-2; }
+        }
+    }
+
+    mark {
+        background: $color-3;
+        color: inherit;
+        font-weight: bold;
+    }
+}
+
+
+@supports (transform: scale(0)) {
+    div.awesomplete > ul {
+        transition: .3s cubic-bezier(.4,.2,.5,1.4);
+        transform-origin: 1em -.43em;
+    }
+
+    div.awesomplete > ul[hidden],
+    div.awesomplete > ul:empty {
+        display: block;
+        opacity: 0;
+        transform: scale(0);
+        transition-timing-function: ease;
+    }
+}
+
+
+/* ------------------------------------------------------------------------
+-  Make things responsive. -
+-------------------------------------------------------------------------*/
+
+@media (max-width: 850px) {
+
+    body { font-size: large; }
+
+    .main-header,
+    .main-content {
+        padding: 0.75em;
+        width: 100%;
+
+        .title { margin-top: 0 !important; }
+    }
+
+    .main-header .module { margin-left: 0; }
+    .main-content .module { margin-top: 0; }
+
+    nav { text-align: center; }
+    nav br { display: none; }
+    nav a { margin: 0 0.75em; }
+
+    .social { text-align: center; }
+    .social li { display: block; width: 100%; }
+
+    pre, code { font-size: 1em !important; }
+}

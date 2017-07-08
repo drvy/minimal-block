@@ -1,12 +1,29 @@
+#------------------------------------------------------------------------------
 # General
+<<<<<<< HEAD
 name: "Stephen Groat"
 description: "Engineer focused on security, IPv6, and sunny days."
-url: https://www.stephengroat.com
+language: "en"
 
+url: https://www.stephengroat.com
+baseurl: ''
+
+#------------------------------------------------------------------------------
+# Markdown processor and code highlighting
+#------------------------------------------------------------------------------
 markdown: kramdown
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 highlighter: rouge
 
-paginate: 5
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+#------------------------------------------------------------------------------
+# Pagination and friendly URLs
+#------------------------------------------------------------------------------
+paginate: 2
+paginate_path: /page-:num
 permalink: /:title
 singlepage: resume
 
@@ -22,7 +39,18 @@ ieee-collabratec: sgroat
 about-me: stephengroat
 onename: stepheng
 email: stephen@egroat.com
+enable-share: false
 
-# RSS feed
 rss-feed-limit: 10
-rss-show-full: "no"
+rss-show-full: false
+
+#------------------------------------------------------------------------------
+# Configuration, plugins, gems, etc..
+#------------------------------------------------------------------------------
+source: .
+destination: ./_site
+gems: ['jekyll-paginate']
+
+sass:
+    style: :compressed
+    sass_dir: assets/css/
