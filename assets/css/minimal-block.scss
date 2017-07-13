@@ -59,6 +59,9 @@ html, body {
     background: $color-0;
     font: $font-size $font-stack;
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
 }
 
 a {
