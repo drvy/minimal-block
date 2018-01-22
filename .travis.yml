@@ -1,3 +1,7 @@
 language: ruby
 cache: bundler
 rvm: 2.4.1
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
