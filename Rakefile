@@ -16,7 +16,6 @@ task proof: 'build' do
   HTMLProofer.check_directory(
     './_site', \
     assume_extension: true, \
-    check_html: true, \
-    disable_external: true
+    check_html: true
   ).run
 end

@@ -53,3 +53,11 @@ gems: ['jekyll-paginate']
 sass:
     style: :compressed
     sass_dir: assets/css/
+
+exclude:
+    - CNAME
+    - Gemfile
+    - LICENSE
+    - README.md
+    - Rakefile
+    - vendor
