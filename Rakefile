@@ -18,6 +18,6 @@ task proof: 'build' do
     assume_extension: true, \
     check_html: true, \
     internal_domains: ["www.stephengroat.com"], \
-    url_ignore: [/tealium.com/, /www.linkedin.com\/in/, /scholar.google.com/] 
+    url_ignore: [/tealium.com/, /www.linkedin.com\/in/, /scholar.google.com\/citations\?user\=/] 
   ).run
 end
