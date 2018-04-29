@@ -1,7 +1,9 @@
 require 'html-proofer'
 require 'jekyll'
+require 'rubocop/rake_task'
+require 'rspec/core/rake_task'
 
-task default: %w[proof]
+task default: %w[proof spec rubocop]
 
 task :build do
   config = Jekyll.configuration(
@@ -17,7 +19,13 @@ task proof: 'build' do
     './_site', \
     assume_extension: true, \
     check_html: true, \
-    internal_domains: ["www.stephengroat.com"], \
-    url_ignore: [/tealium.com/, /www.linkedin.com\/in/, /scholar.google.com\/citations\?user\=/] 
+    internal_domains: ['www.stephengroat.com'], \
+    url_ignore: [%r{/tealium.com},
+                 %r{www.linkedin.com\/in},
+                 %r{scholar.google.com\/citations\?user\=}]
   ).run
 end
+
+RSpec::Core::RakeTask.new(:spec)
+
+RuboCop::RakeTask.new
