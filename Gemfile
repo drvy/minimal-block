@@ -12,5 +12,6 @@ group :development, :test do
   gem 'rake'
   gem 'rspec'
   gem 'rubocop'
+  gem 'rubocop-rspec'
   gem 'selenium-webdriver'
 end
