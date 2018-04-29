@@ -19,7 +19,7 @@ RSpec.configure do |config|
   Capybara.register_driver :selenium do |app|
     # Configure selenium to use headless Chrome
     capabilities = Selenium::WebDriver::Remote::Capabilities.chrome(
-      chromeOptions: { args: %w[headless] }
+      chromeOptions: { args: %w[headless no-sandbox] }
     )
 
     Capybara::Selenium::Driver.new app,
