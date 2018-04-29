@@ -19,12 +19,12 @@ RSpec.configure do |config|
   Capybara.register_driver :selenium do |app|
     # Configure selenium to use headless Chrome
     capabilities = Selenium::WebDriver::Remote::Capabilities.chrome(
-      chromeOptions: { args: %w(headless disable-gpu) }
+      chromeOptions: { args: %w[headless disable-gpu] }
     )
 
     Capybara::Selenium::Driver.new app,
-      browser: :chrome,
-      desired_capabilities: capabilities
+                                   browser: :chrome,
+                                   desired_capabilities: capabilities
   end
 
   # Configure Capybara to load the website through rack-jekyll.
