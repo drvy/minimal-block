@@ -18,8 +18,11 @@ RSpec.configure do |config|
   # Configure Capybara to use Selenium
   Capybara.register_driver :selenium do |app|
     # Configure selenium to use headless Chrome
+    args = %w[headless]
+    # see https://docs.travis-ci.com/user/chrome#Sandboxing
+    args << 'no-sandbox' if ENV['TRAVIS'] == 'true'
     capabilities = Selenium::WebDriver::Remote::Capabilities.chrome(
-      chromeOptions: { args: %w[headless no-sandbox] }
+      chromeOptions: { args: args }
     )
 
     Capybara::Selenium::Driver.new app,
