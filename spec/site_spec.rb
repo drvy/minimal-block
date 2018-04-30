@@ -5,6 +5,8 @@ describe 'sample', type: :feature, js: true do
     # or checking the actual state of the page
     # TODO fix
     # binding.pry
+    # Get the logs
+    # page.driver.browser.manage.logs.get(:browser)
     # expect(find('.post-link').text).to eq(
     #   'Stephen Groat -- Engineer focused on security, IPv6, and sunny days'
     # )
