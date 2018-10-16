@@ -1,5 +1,5 @@
 # stephengroat.github.io
-[![Build Status](https://travis-ci.org/stephengroat/stephengroat.github.io.svg?branch=master)](https://travis-ci.org/stephengroat/stephengroat.github.io)
+[![Build Status](https://travis-ci.com/stephengroat/stephengroat.github.io.svg?branch=master)](https://travis-ci.com/stephengroat/stephengroat.github.io)
 
 This theme stared out being a fork from the [Block-log](https://github.com/anandubajith/block-log). It still keeps many similarities. Minimal-block is a minimalistic, responsive and friendly Jekyllrb theme. It has almost no javascript (except for disquss), static social share buttons, rss, paginator, clean and simple permalinks and RSS.
 
