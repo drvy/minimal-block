@@ -26,6 +26,11 @@ task proof: 'build' do
   ).run
 end
 
+task :alpha do
+  file = File.readlines('files/Brewfile')
+  raise if file != file.sort
+end
+
 RSpec::Core::RakeTask.new(:spec)
 
 RuboCop::RakeTask.new
