@@ -3,7 +3,7 @@ require 'jekyll'
 require 'rubocop/rake_task'
 require 'rspec/core/rake_task'
 
-task default: %w[proof spec rubocop]
+task default: %w[proof spec rubocop alpha]
 
 task :build do
   config = Jekyll.configuration(
@@ -27,7 +27,7 @@ task proof: 'build' do
 end
 
 task :alpha do
-  file = File.readlines('files/Brewfile')
+  file = File.readlines('files/.Brewfile')
   raise if file != file.sort
 end
 
