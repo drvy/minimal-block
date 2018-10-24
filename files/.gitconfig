@@ -1,0 +1,5 @@
+[credential]
+	helper = osxkeychain
+[user]
+	name = Stephen G
+	email = stephen@egroat.com
