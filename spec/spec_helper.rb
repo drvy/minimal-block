@@ -2,6 +2,7 @@
 require 'rspec'
 require 'capybara/rspec'
 require 'selenium/webdriver'
+require 'chromedriver-helper'
 require 'rack/jekyll'
 require 'rack/test'
 require 'pry'
