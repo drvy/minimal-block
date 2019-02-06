@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Require all of the necessary gems
 require 'rspec'
 require 'capybara/rspec'

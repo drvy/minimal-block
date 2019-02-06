@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'html-proofer'
 require 'jekyll'
 require 'rubocop/rake_task'

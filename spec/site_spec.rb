@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe 'sample', type: :feature, js: true do
   it 'has the page title' do
     visit '/'
