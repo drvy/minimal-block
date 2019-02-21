@@ -25,7 +25,7 @@ task proof: 'build' do
     url_ignore: [%r{/tealium.com},
                  %r{www.linkedin.com\/in},
                  %r{scholar.google.com\/citations\?user\=},
-                 %r{angel.co}]
+                 /angel\.co/]
   ).run
 end
 
