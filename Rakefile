@@ -24,7 +24,8 @@ task proof: 'build' do
     internal_domains: ['www.stephengroat.com'], \
     url_ignore: [%r{/tealium.com},
                  %r{www.linkedin.com\/in},
-                 %r{scholar.google.com\/citations\?user\=}]
+                 %r{scholar.google.com\/citations\?user\=},
+                 %r{angel.co}]
   ).run
 end
 
