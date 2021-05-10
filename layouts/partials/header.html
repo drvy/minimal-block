@@ -1,0 +1,37 @@
+<header id="top" class="main-header">
+    <section class="site-title">
+        {{- if .IsHome }}
+        <h1>
+            <a href="{{ "" | absLangURL }}" title="{{ .Site.Title }}">{{ .Site.Title }}</a>
+        </h1>
+        {{- else }}
+        <h2>
+            <a href="{{ "" | absLangURL }}" title="{{ .Site.Title }}">{{ .Site.Title }}</a>
+        </h2>
+        {{- end }}
+    </section>
+
+    <nav class="site-menu">
+        <ul>
+            <li>
+                <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ i18n "home" }} (Alt + H)">
+                    {{ i18n "home" }}
+                </a>
+            </li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Archives</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+{{ if not .IsHome }}
+<div class="breadcrumbs">
+    <a href="{{ "" | absLangURL }}" title="{{ i18n "home" }}">{{ i18n "home" }}</a>
+    {{ range (split .RelPermalink "/") }}
+        {{ if gt (len . ) 0 }}
+            / <a href="/{{ . }}">{{ humanize (replace . "posts" "blog") }}</a>
+        {{ end }}
+    {{ end }}
+</div>
+{{ end }}
