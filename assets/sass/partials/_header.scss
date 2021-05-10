@@ -1,0 +1,58 @@
+/* ------------
+    Header
+ ------------ */
+
+header.main-header {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: warp;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: $nav-max-width;
+
+    section {
+        padding: 10px 0px;
+
+        &.site-title {
+            h1,
+            h2 {
+                display: inline-block;
+                font-size: 1.8em;
+                font-weight: 700;
+                letter-spacing: -1px;
+
+                a {
+                    color: $black;
+                    text-decoration: none;
+                }
+            }
+
+        }
+    }
+
+    nav {
+        padding: 5px 0px;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: inline-block;
+
+                a {
+                    color: $black-07;
+                    text-decoration: underline;
+                    padding: 2px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
