@@ -1,0 +1,17 @@
+
+<article class="post-entry">
+    <header>
+        <h2 class="title">
+            <a href="{{ .Permalink }}" title="{{- .Title }}">{{- .Title }}</a>
+        </h2>
+    </header>
+
+    <section class="entry-content">
+        <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    </section>
+
+    <aside class="info">
+        <span class="read-time">{{ .ReadingTime }} min</span>
+        <span class="tags">php</span>
+    </aside>
+</article>
