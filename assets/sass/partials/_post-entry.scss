@@ -1,0 +1,50 @@
+.post-entry {
+    background-color: $white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid $black-03;
+    transition: transform .1s ease-in;
+
+    a {
+        &:active { transform: none; }
+    }
+
+    &:active {
+        transform: scale(.95);
+    }
+
+    aside {
+        color: $black-07;
+        font-size: .9rem;
+        text-align: left;
+
+        span:not(:last-child):after {
+            content: '·';
+            display: inline;
+            font-size: 1.5rem;
+            margin: 0 3px;
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
+
+    header {
+        display: inline-block;
+        margin-top: 15px;
+
+        .title {
+            &,
+            a {
+                color: $black;
+                font-size: 1.5rem;
+                line-height: 1.2;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .entry-content {
+        color: $black-07;
+        font-size: 1rem;
+    }
+}

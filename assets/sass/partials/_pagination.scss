@@ -1,0 +1,20 @@
+.pagination {
+    padding: 0;
+
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+
+        a {
+            color: $black;
+            background-color: $white;
+            border-bottom: 2px solid $black-03;
+            padding: 5px;
+            text-decoration: none;
+        }
+    }
+}

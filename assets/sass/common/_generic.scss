@@ -1,0 +1,31 @@
+body {
+    background-color: $page-background;
+    font-family: $primary-font;
+    font-size: 16px;
+}
+
+.wrap {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 10px;
+}
+
+a {
+    color: inherit;
+    display: inline-block;
+    border: 2px solid transparent;
+    text-decoration: underline;
+    transition: transform .1s ease-in;
+
+    &:active,
+    &:focus {
+        border: 2px solid $black-03;
+    }
+
+    &:active {
+        transform: scale(.95);
+    }
+}
