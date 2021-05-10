@@ -4,6 +4,12 @@
 - id: next_page
   translation: "Next Page"
 
+- id: next_post
+  translation: "Next Post"
+
+- id: prev_post
+  translation: "Previous Post"
+
 - id: read_time
   translation:
     one : "1 min"
