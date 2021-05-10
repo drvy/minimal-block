@@ -1,0 +1,21 @@
+{{- define "main" }}
+
+<main class="container">
+    {{- if (.IsHome) }}
+        {{ partial "profile.html" . }}
+    {{- end }}
+
+    {{ partial "list.html" . }}
+</main>
+
+<footer>
+    <nav class="pagination">
+        <ul>
+            <li class="prev-page"><a rel="prev" href="#">Previous Page</a></li>
+            <li class="current-page">1 of 1</li>
+            <li class="next-page"><a rel="next" href="#">Next Page</a></li>
+        </ul>
+    </nav>
+</footer>
+
+{{- end }}
