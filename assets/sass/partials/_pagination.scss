@@ -2,6 +2,7 @@
     padding: 0;
 
     ul {
+        color: $black;
         list-style: none;
         display: flex;
         align-items: center;
@@ -9,12 +10,27 @@
         padding: 0;
         margin: 0;
 
-        a {
-            color: $black;
-            background-color: $white;
-            border-bottom: 2px solid $black-03;
-            padding: 5px;
-            text-decoration: none;
+        li {
+            width: 100%;
+
+            &.prev-page {
+                text-align: left;
+            }
+
+            &.current-page {
+                text-align: center;
+            }
+
+            &.next-page {
+                text-align: right;
+            }
+
+            a {
+                background-color: $white;
+                border-bottom: 2px solid $black-03;
+                padding: 5px;
+                text-decoration: none;
+            }
         }
     }
 }

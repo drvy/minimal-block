@@ -1,16 +1,26 @@
+* {
+    &::selection,
+    &::-moz-selection {
+        background: $yellow;
+        color: $black;
+    }
+}
+
 body {
+    color: $black;
     background-color: $page-background;
     font-family: $primary-font;
     font-size: 16px;
 }
 
 .wrap {
-    max-width: 720px;
     margin: 0 auto;
+    max-width: 720px;
+    padding: 0 10px;
 }
 
 .container {
-    padding: 10px;
+    padding: 10px 0;
 }
 
 a {
@@ -29,3 +39,14 @@ a {
         transform: scale(.95);
     }
 }
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+h1 { font-size: 1.8rem; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.4rem; }
+h4 { font-size: 1.2rem; }
+h5, h6 { font-size: 1rem; }
