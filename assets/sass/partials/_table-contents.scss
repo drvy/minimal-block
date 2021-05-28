@@ -1,0 +1,20 @@
+.table-contents {
+    color: $black-07;
+    padding: 5px;
+
+    & > span  {
+        color: $black;
+        display: block;
+        font-weight: 700;
+    }
+
+    ul,
+    ol {
+        list-style-position: inside;
+        padding: 0;
+
+        & > ul, ol {
+            padding-left: 20px;
+        }
+    }
+}
