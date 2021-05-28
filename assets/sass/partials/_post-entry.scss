@@ -6,11 +6,7 @@
     transition: transform .1s ease-in;
 
     a {
-        &:active { transform: none; }
-    }
-
-    &:active {
-        transform: scale(.95);
+        &:active { transform: scale(.95); }
     }
 
     aside {
@@ -43,8 +39,68 @@
         }
     }
 
-    .entry-content {
-        color: $black-07;
+    &.entry-content {
+        color: $black;
         font-size: 1rem;
+        line-height: 1.6;
+
+        & > h1,
+        & > h2,
+        & > h3,
+        & > h4,
+        & > h5,
+        & > h6,
+        & > p,
+        & > img,
+        & > table,
+        & > ul,
+        & > ol,
+        & > blockquote,
+        & > code,
+        & > pre {
+            margin: 1em 0;
+        }
+
+        code {
+            display: block;
+            background-color: $black;
+            color: $white;
+            font-family: monospace;
+            font-size: .9em;
+            padding: 0.5em;
+        }
+
+        blockquote {
+            font-style: italic;
+            margin: 1.5em;
+            padding: .5em;
+            quotes: "\201C""\201D""\2018""\2019";
+
+            :before {
+                color: $black-03;
+                content: open-quote;
+                font-size: 3em;
+                line-height: .1em;
+                margin-right: .25em;
+            }
+
+            p { display: inline; }
+        }
+
+        table {
+            border: 1px solid $black-03;
+            border-collapse: collapse;
+            font-size: 1em;
+            margin: .5em 0;
+            width: 100%;
+
+            td, th {
+                border: 1px solid #a1a1a1;
+                padding: 0.2em;
+            }
+
+            tr:nth-child(odd) { background: $white; }
+            tr:nth-child(even)  { background: $page-background; }
+        }
     }
 }

@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<article>
+    <header>
+        <h2 class="title">
+            <a href="{{ .Permalink }}" title="{{- .Title }}">{{- .Title }}</a>
+        </h2>
+    </header>
+
+    <aside class="info">
+        <span class="read-time">{{ .ReadingTime }} min</span>
+        <span class="tags">php</span>
+    </aside>
+
+    <section class="entry-content post-entry">
+            {{ if and (ge (len .TableOfContents) 50) (ne .Site.Params.TableOfContents "false") }}
+            <div class="table-contents">
+                <span>Contents</span>
+                {{ .TableOfContents }}
+            </div>
+        {{ end }}
+
+        {{ .Content }}
+    </section>
+</article>
+
+
+{{ end }}

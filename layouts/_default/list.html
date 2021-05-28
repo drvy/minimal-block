@@ -1,21 +1,39 @@
-{{- define "main" }}
+{{ define "main" }}
+
+{{- $pages := union .RegularPages .Sections }}
+
+{{- if .IsHome }}
+    {{- $pages = where site.RegularPages "Type" "posts" }}
+{{- end }}
+
+{{- $paginator := .Paginate $pages }}
 
 <main class="container">
-    {{- if (.IsHome) }}
-        {{ partial "profile.html" . }}
-    {{- end }}
-
-    {{ partial "list.html" . }}
+    {{ range $index, $page := $paginator.Pages }}
+        {{ partial "list.html" . }}
+    {{ end }}
 </main>
 
+{{- if or ($paginator.HasPrev) ($paginator.HasNext) }}
 <footer>
     <nav class="pagination">
         <ul>
-            <li class="prev-page"><a rel="prev" href="#">Previous Page</a></li>
-            <li class="current-page">1 of 1</li>
-            <li class="next-page"><a rel="next" href="#">Next Page</a></li>
+            <li class="prev-page">
+                {{- if $paginator.HasPrev }}
+                    <a rel="prev" href="{{ $paginator.Prev.URL | absURL }}">{{ i18n "prev_page" }}</a>
+                {{- end }}
+            </li>
+
+            <li class="current-page">{{ $paginator.PageNumber }} {{ i18n "pagination_sep" }} {{ $paginator.TotalPages }}</li>
+
+            <li class="next-page">
+                {{- if $paginator.HasNext }}
+                    <a rel="next" href="{{ $paginator.Next.URL | absURL }}">{{ i18n "next_page" }}</a>
+                {{- end }}
+            </li>
         </ul>
     </nav>
 </footer>
+{{- end }}
 
 {{- end }}
