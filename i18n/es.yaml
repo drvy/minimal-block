@@ -4,6 +4,15 @@
 - id: next_page
   translation: "Siguiente página"
 
+- id: next_post
+  translation: "Siguiente articulo"
+
+- id: prev_post
+  translation: "Articulo previo"
+
+- id: pagination_sep
+  translation: "de"
+
 - id: read_time
   translation:
     one : "1 min"

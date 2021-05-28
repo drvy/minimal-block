@@ -10,6 +10,9 @@
 - id: prev_post
   translation: "Previous Post"
 
+- id: pagination_sep
+  translation: "of"
+
 - id: read_time
   translation:
     one : "1 min"
