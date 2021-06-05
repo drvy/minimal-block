@@ -6,6 +6,18 @@
     .title {
         display: block;
         font-size: 1.8em;
+
+        @media screen and (max-width: $lg) {
+            font-size: 1.6em;
+        }
+
+        @media screen and (max-width: $sm) {
+            font-size: 1.4em;
+        }
+
+        a {
+            text-decoration: none;
+        }
     }
 
     .info {
@@ -30,6 +42,7 @@
             }
 
             a {
+                padding: 0 2px;
                 &:not(:last-child)::after {
                     content: ', ';
                     font-size: 1em;

@@ -2,17 +2,16 @@
 
 <article>
     <header>
-        <h2 class="title">
-            <a href="{{ .Permalink }}" title="{{- .Title }}">{{- .Title }}</a>
-        </h2>
+        <h2 class="title">{{ .Title }}</h2>
 
         <aside class="info">
             {{ with .Params.categories }}
                 <span class="tag">
                     Category:
-                {{ range . }}
-                    <a href="{{ "categories" | absURL}}/{{ . | urlize }}">{{ . }}</a>
-                {{ end }}
+
+                    {{ range . }}
+                        <a class="cat-{{ . | urlize }}" href="{{ "categories" | absURL}}/{{ . | urlize }}">{{ . }}</a>
+                    {{ end }}
                 </span>
             {{ end }}
 

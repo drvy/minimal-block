@@ -18,17 +18,25 @@ header.main-header {
         &.site-title {
             h1,
             h2 {
-                color: $black;
+                color: $black-07;
                 display: inline-block;
-                font-size: 1.8em;
+                font-size: 1.6em;
                 font-weight: 700;
                 letter-spacing: -1px;
+
+                @media screen and (max-width: $sm) {
+                    font-size: 1.4em;
+                }
 
                 a {
                     text-decoration: none;
                 }
             }
 
+            h1 {
+                color: $black;
+                font-size: 1.8em;
+            }
         }
     }
 
