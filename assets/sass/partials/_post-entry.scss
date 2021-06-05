@@ -61,13 +61,36 @@
             margin: 1em 0;
         }
 
-        code {
+        fieldset {
+            min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            legend {
+                max-width: 100%;
+                min-width: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+
+        pre {
             display: block;
-            background-color: $black;
-            color: $white;
             font-family: monospace;
             font-size: .9em;
-            padding: 0.5em;
+            padding: .5em;
+            white-space: pre-wrap;
+        }
+
+        code {
+            background-color: $black;
+            color: $white;
+            display: block;
+            font-family: monospace;
+            font-size: .9em;
+            padding: .5em;
+            white-space: pre-wrap;
         }
 
         blockquote {
