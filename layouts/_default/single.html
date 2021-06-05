@@ -7,7 +7,7 @@
         <aside class="info">
             {{ with .Params.categories }}
                 <span class="tag">
-                    Category:
+                    {{ i18n "category" (len .) }}:
 
                     {{ range . }}
                         <a class="cat-{{ . | urlize }}" href="{{ "categories" | absURL}}/{{ . | urlize }}">{{ . }}</a>
@@ -15,14 +15,14 @@
                 </span>
             {{ end }}
 
-            <span class="read-time">Reading time: {{ .ReadingTime }} min</span>
+            <span class="read-time">{{ i18n "read_time" .ReadingTime }}</span>
         </aside>
     </header>
 
     <section class="entry-content post-entry">
             {{ if and (ge (len .TableOfContents) 50) (ne .Site.Params.TableOfContents "false") }}
             <div class="table-contents">
-                <span>Contents</span>
+                <span>{{ i18n "toc" }}</span>
                 {{ .TableOfContents }}
             </div>
         {{ end }}

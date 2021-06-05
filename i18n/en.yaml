@@ -15,8 +15,8 @@
 
 - id: read_time
   translation:
-    one : "1 min"
-    other: "{{ .Count }} min"
+    one : "Reading time: 1 min"
+    other: "Reading time: {{ .Count }} min"
 
 - id: toc
   translation: "Table of Contents"
@@ -32,3 +32,8 @@
 
 - id: code_copied
   translation: "Copied!"
+
+- id: category
+  translation:
+    one: "Category"
+    other: "Categories"
