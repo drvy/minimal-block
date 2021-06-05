@@ -5,12 +5,20 @@
         <h2 class="title">
             <a href="{{ .Permalink }}" title="{{- .Title }}">{{- .Title }}</a>
         </h2>
-    </header>
 
-    <aside class="info">
-        <span class="read-time">{{ .ReadingTime }} min</span>
-        <span class="tags">php</span>
-    </aside>
+        <aside class="info">
+            {{ with .Params.categories }}
+                <span class="tag">
+                    Category:
+                {{ range . }}
+                    <a href="{{ "categories" | absURL}}/{{ . | urlize }}">{{ . }}</a>
+                {{ end }}
+                </span>
+            {{ end }}
+
+            <span class="read-time">Reading time: {{ .ReadingTime }} min</span>
+        </aside>
+    </header>
 
     <section class="entry-content post-entry">
             {{ if and (ge (len .TableOfContents) 50) (ne .Site.Params.TableOfContents "false") }}
