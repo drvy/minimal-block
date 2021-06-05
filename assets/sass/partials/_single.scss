@@ -4,6 +4,51 @@
     }
 
     .title {
+        display: block;
         font-size: 1.8em;
+
+        @media screen and (max-width: $lg) {
+            font-size: 1.6em;
+        }
+
+        @media screen and (max-width: $sm) {
+            font-size: 1.4em;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .info {
+        display: block;
+        text-align: left;
+
+        span {
+            display: inline-block;
+            background-color: $white;
+            border-bottom: 2px solid $black-03;
+            color: $black-07;
+            padding: 2px;
+
+            margin-top: 1em;
+
+            &.read-time {
+                padding: 4px;
+            }
+
+            &:not(:last-child) {
+                margin-right: 3px;
+            }
+
+            a {
+                padding: 0 2px;
+                &:not(:last-child)::after {
+                    content: ', ';
+                    font-size: 1em;
+                    color: inherit;
+                }
+            }
+        }
     }
 }
