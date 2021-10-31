@@ -5,6 +5,8 @@
         <h2 class="title">{{ .Title }}</h2>
 
         <aside class="info">
+            <span class="read-time">{{ i18n "read_time" .ReadingTime }}</span>
+
             {{ with .Params.categories }}
                 <span class="tag">
                     {{ i18n "category" (len .) }}:
@@ -14,8 +16,6 @@
                     {{ end }}
                 </span>
             {{ end }}
-
-            <span class="read-time">{{ i18n "read_time" .ReadingTime }}</span>
         </aside>
     </header>
 

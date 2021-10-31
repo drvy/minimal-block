@@ -16,6 +16,8 @@ header.main-header {
         padding: 10px 0px;
 
         &.site-title {
+            margin-left: -2px;
+
             h1,
             h2 {
                 color: $black-07;
@@ -53,11 +55,10 @@ header.main-header {
                 display: inline-block;
 
                 a {
-                    text-decoration: underline;
-                    padding: 2px 4px 2px 0;
+                    padding: 5px 10px;
 
-                    &:hover {
-                        text-decoration: underline;
+                    &:first-child {
+                        margin-left: -10px;
                     }
                 }
             }

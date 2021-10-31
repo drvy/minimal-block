@@ -27,7 +27,8 @@
 
             a {
                 background-color: $white;
-                border-bottom: 2px solid $black-03;
+                border-bottom: 3px solid $black-03;
+                border-radius: $border-radius;
                 padding: 5px;
                 text-decoration: none;
             }
