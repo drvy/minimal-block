@@ -1,5 +1,4 @@
-
-<article class="post-entry">
+<article class="post-entry {{ range(.Params.categories) }} type-{{ . | urlize }} {{ end }}">
     <header>
         <h2 class="title">
             <a href="{{ .Permalink }}" title="{{- .Title }}">{{- .Title }}</a>

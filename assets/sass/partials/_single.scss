@@ -3,48 +3,60 @@
         margin-top: 15px;
     }
 
-    .title {
-        display: block;
-        font-size: 1.8em;
+    header {
+        width: 100%;
 
-        @media screen and (max-width: $lg) {
-            font-size: 1.6em;
-        }
+        .title {
+            display: block;
+            font-size: 1.8em;
 
-        @media screen and (max-width: $sm) {
-            font-size: 1.4em;
-        }
+            @media screen and (max-width: $lg) {
+                font-size: 2em;
+            }
 
-        a {
-            text-decoration: none;
+            @media screen and (max-width: $sm) {
+                font-size: 1.4em;
+            }
+
+            a {
+                text-decoration: none;
+            }
         }
     }
 
     .info {
-        display: block;
-        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 1em;
+        width: 100%;
 
         span {
-            display: inline-block;
-            background-color: $white;
-            border-bottom: 2px solid $black-03;
-            color: $black-07;
-            padding: 2px;
+            background-color: $primary-background;
+            border: 2px solid $primary-color-07;
+            border-bottom-width: 6px;
+            border-radius: 10px;
+            color: $primary-color-07;
+            display: block;
+            padding: 5px;
+            margin-right: 5px;
 
-            margin-top: 1em;
-
-            &.read-time {
-                padding: 4px;
+            &:not(:last-child):after {
+                display: none;
             }
 
-            &:not(:last-child) {
-                margin-right: 3px;
+            &::after {
+                display: inline-block;
+                content: " ";
+                white-space: pre;
+                border: 2px solid transparent;
             }
 
             a {
-                padding: 0 2px;
+                padding: 0;
+
                 &:not(:last-child)::after {
-                    content: ', ';
+                    content: ',';
                     font-size: 1em;
                     color: inherit;
                 }

@@ -1,18 +1,25 @@
 .post-entry {
-    background-color: $white;
-    padding: 15px;
+    background-color: $primary-background;
+    border: 2px solid $primary-color;
+    border-bottom-width: 6px;
+    border-radius: 10px;
     margin-bottom: 15px;
-    border-bottom: 3px solid $black-03;
+    padding: 15px;
     transition: transform .1s ease-in;
+
+    &.full {
+        border-top-width: 6px;
+    }
 
     a {
         &:active { transform: scale(.95); }
     }
 
     aside {
-        color: $black-07;
+        color: $primary-color-07;
         font-size: .9rem;
         text-align: left;
+        font-weight: 600;
 
         span:not(:last-child):after {
             content: '·';
@@ -24,23 +31,25 @@
         }
     }
 
-    header {
-        display: inline-block;
-        margin-top: 15px;
+    &:not(.full) {
+        header {
+            display: inline-block;
+            margin-top: 15px;
 
-        .title {
-            &,
-            a {
-                color: $black;
-                font-size: 1.5rem;
-                line-height: 1.2;
-                text-decoration: underline;
+            .title {
+                &,
+                a {
+                    color: $primary-color;
+                    font-size: 2rem;
+                    line-height: 1.2;
+                    text-decoration: underline;
+                }
             }
         }
     }
 
-    &.entry-content {
-        color: $black;
+    .entry-content {
+        color: $primary-color;
         font-size: 1rem;
         line-height: 1.6;
 
@@ -84,8 +93,8 @@
         }
 
         code {
-            background-color: $black;
-            color: $white;
+            background-color: $primary-background;
+            color: $primary-color;
             display: block;
             font-family: monospace;
             font-size: .9em;
@@ -100,7 +109,7 @@
             quotes: "\201C""\201D""\2018""\2019";
 
             :before {
-                color: $black-03;
+                color: $primary-color-03;
                 content: open-quote;
                 font-size: 3em;
                 line-height: .1em;
@@ -111,23 +120,23 @@
         }
 
         table {
-            border: 1px solid $black-03;
+            border: 1px solid $table-border;
             border-collapse: collapse;
             font-size: 1em;
             margin: .5em 0;
             width: 100%;
 
             td, th {
-                border: 1px solid #a1a1a1;
+                border: 1px solid $table-border;
                 padding: 0.2em;
             }
 
-            tr:nth-child(odd) { background: $white; }
-            tr:nth-child(even)  { background: $page-background; }
+            tr:nth-child(odd) { background: $table-odd; }
+            tr:nth-child(even)  { background: $table-even; }
         }
 
         hr {
-            border-color: $black-03;
+            border-color: $primary-color-03;
         }
     }
 }

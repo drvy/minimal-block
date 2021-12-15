@@ -1,16 +1,15 @@
 {{ define "main" }}
 
-<article>
+<article class="post-entry full">
     <header>
-        <h2 class="title">{{ .Title }}</h2>
+        <h1 class="title">{{ .Title }}</h1>
 
         <aside class="info">
             {{ with .Params.categories }}
-                <span class="tag">
+                <span class="categories">
                     Category:
-
                     {{ range . }}
-                        <a class="cat-{{ . | urlize }}" href="{{ "categories" | absURL}}/{{ . | urlize }}">{{ . }}</a>
+                        <a class="cat-{{ . | urlize }}" href="{{ "categories" | absURL}}/{{ . | urlize }}">{{- . -}}</a>
                     {{ end }}
                 </span>
             {{ end }}
@@ -19,13 +18,13 @@
         </aside>
     </header>
 
-    <section class="entry-content post-entry">
-            {{ if and (ge (len .TableOfContents) 50) (ne .Site.Params.TableOfContents "false") }}
+    <section class="entry-content">
+            {{- if and (ge (len .TableOfContents) 50) (ne .Site.Params.TableOfContents "false") -}}
             <div class="table-contents">
                 <span>Contents</span>
                 {{ .TableOfContents }}
             </div>
-        {{ end }}
+        {{- end -}}
 
         {{ .Content }}
     </section>

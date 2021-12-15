@@ -1,13 +1,5 @@
-* {
-    &::selection,
-    &::-moz-selection {
-        background: $yellow;
-        color: $black;
-    }
-}
-
 body {
-    color: $black;
+    color: $primary-color;
     background-color: $page-background;
     font-family: $primary-font;
     font-size: 16px;
@@ -32,7 +24,7 @@ a {
 
     &:active,
     &:focus {
-        border: 2px solid $black-03;
+        border: 2px solid $primary-color-03;
     }
 
     &:active {
