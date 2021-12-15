@@ -2,7 +2,7 @@
     padding: 0;
 
     ul {
-        color: $black;
+        color: $primary-color;
         list-style: none;
         display: flex;
         align-items: center;
@@ -26,7 +26,8 @@
             }
 
             a {
-                background-color: $white;
+                color: $primary-color;
+                background-color: $primary-background;
                 border-bottom: 2px solid $black-03;
                 padding: 5px;
                 text-decoration: none;
